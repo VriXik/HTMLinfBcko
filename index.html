@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<h1>Přihlašky nakurz plavani</h1>
+
+<fieldset>
+  <legend>Kontakní udaje:</legend>
+  <form method="post">
+    <label for="JmenoPrijmeni">Jmeno a Přijmeni:</label>
+    <input type="text" id="JmenoPrijmeni" name="JmenoPrijmeni">
+
+    <br>
+
+    <label for="date" >Datum narozeni:</label>
+    <input id="date" type="date" name="date">
+
+    <br>
+
+    <label for="adres">Adresa bydlište:</label>
+    <input type="text" id="adres" name="adres">
+
+    <br>
+
+    <label for="mail" >E-mail:</label>
+    <input id="mail" name="mail" placeholder="napr. jannovak@emal.cz">
+
+    <br>
+
+    <label for="tel" >Telefon:</label>
+    <input type="tel" id="tel" name="tel" placeholder="napr. 123-145-678">
+
+  </form>
+</fieldset>
+
+
+<br>
+
+
+  <form>
+<fieldset>
+<legend>Termin prihlasenia dalsi informace:</legend>
+
+  <label for="placve">Typ plavce:</label>
+    <select name="placve" id="placve">
+      <option name="placve">neplavec</option>
+      <option name="placve">zacatecnik</option>
+      <option name="placve">mirne pokrocily</option>
+      <option name="placve">pokrocily</option>
+    </select>
+
+  <br>
+
+  <label>Zvolte termin</label>
+  <label  for="date" ><input name="date" type="radio">2.-9. cervna 2023</label>
+  <br>
+  <label for="date" class="odsazeni"><input name="date" type="radio">6.-16. cervna 2023</label>
+  <br>
+  <label for="date" class="odsazeni"><input name="date" type="radio">16.-23. cervna 2023</label>
+  <br>
+  <label for="date" class="odsazeni"><input name="date" type="radio">23.-30. cervna 2023</label>
+
+  <br>
+
+  <label for="souhlas">souhlasim s vybranymi terminy a zavazne se přihlasuji na kurz plavani</label>
+  <input type="checkbox" id="souhlas">
+
+  <br>
+
+  <label for="text">Poznamky k prihlasce</label>
+  <textarea name="text" id="text">dalsi informace uvedte do poznamky
+  </textarea>
+  <p>Po potvrzeni prihlasky uhradte castku <b>4500kc</b>, prevoodem na nasucet c. <b>111-1111110000/0001</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Atque blanditiis doloribus maxime molestiae natus nemo sunt tempora ut velit
+    voluptatibus! A, ab voluptatibus. Fugiat, fugit hic officiis qui saepe tempore.</p>
+</fieldset>
+    <input type="reset" name="vymazat" id="vymazat" value="vymazat">
+    <input type="submit" name="submit">
+  </form>
+
+</body>
+</html>
